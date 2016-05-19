@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blockchain</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="page-wrap">
+		<header>
+			<div class="header_top">
+				<div class="container">
+					<div class="row">	
+						<div class="header_top_left">
+							<a href="#"><b>BLOCKCHAIN</b></a>
+							<form class="navbar-form navbar">
+			       	          	<section id="search">
+					        		<label for="search-input"><i class="fa fa-search"></i></label>
+					        		<input id="search-input" class="form-control" placeholder="Поиск" autocomplete="off" spellcheck="false" autocorrect="off">
+					    		</section>
+			          		</form>
+						</div>
+
+						<div class="header_top_right">
+							<div class="bell"><i class="fa fa-bell"></i><div class="green_dot"></div></div>	
+							<span class="user"><b>Владислав</b></span>
+							<a href="#" id="mobile_menu"><i class="fa fa-bars mobile_bars"></i></a> 
+							<ul class="m_menu">
+								<li class="active"><a href=""><i class="fa fa-home"></i>Главная</a></li>
+								<li><a href=""><i class="fa fa-bar-chart"></i>Графики</a></li>
+								<li><a href=""><i class="fa fa-pie-chart"></i>Статистика</a></li>
+								<li><a href=""><i class="fa fa-briefcase"></i>Рынок</a></li>
+								<li><a href=""><i class="fa fa-cog"></i>API</a></li>
+								<li><a href=""><i class="fa fa-money"></i>Кошелек</a></li>
+								<li><a href=""><i class="fa fa-file-text"></i>Список магазинов</a></li>
+								<hr>
+								<li><a href=""><i class="fa fa-unlock"></i>Войти</a></li>
+								<li><a href=""><i class="fa fa-user"></i>Зарегестрироваться</a></li>
+							</ul>
+						</div>
+					</div>		
+				</div>	
+			</div>
+
+			<div class="header_bottom">
+				<div class="container">
+					<ul>
+						<li><a href=""><i class="fa fa-home"></i>Главная</a></li>
+						<li><a href=""><i class="fa fa-bar-chart"></i>Графики</a></li>
+						<li><a href=""><i class="fa fa-pie-chart"></i>Статистика</a></li>
+						<li><a href=""><i class="fa fa-briefcase"></i>Рынок</a></li>
+						<li><a href=""><i class="fa fa-cog"></i>API</a></li>
+						<li class="active"><a href=""><i class="fa fa-money"></i>Кошелек</a></li>
+						<li><a href=""><i class="fa fa-file-text"></i>Магазины</a></li>
+					</ul>
+				</div>	
+			</div>
+		</header>
+		<div id="mywallet" class="api demowallet transacitons mytransactions">
+			<div class="whiteblock">
+				<div class="container">
+					<div class="container">
+						<h3 class="pull-left">Демо-кошелёк</h3>
+						<div class="pull-right">
+							<h3>46.73461718 BTC</h3>
+							<h5> $17,338.54</h5>
+						</div>
+					</div>	
+
+					<ul class="second_list">
+						<li class="active"><a href="#">Wallet <br class="display_at_600"> Home</a></li>
+						<li><a href="#">My <br class="display_at_600"> Transactions</a></li>
+						<li><a href="#">Send <br class="display_at_600"> Money</a></li>
+						<li><a href="#">Receive <br class="display_at_600"> Money</a></li>
+						<li><a href="#">Import /<br class="display_at_600"> Export</a></li>
+					</ul>
+					
+					
+				</div>	
+			</div>
+			<div id='main'>
+			<div class="container content">
+			<!-- CONTENT GOES HERE -->
+				<!-- CONTENT GOES HERE -->
+
+				<div class="row">
+					<div class="container transactions_container">	
+						<h3>Transactions</h3>
+						<p class="welcome">Summary of your recent transactions</p>
+						<select class="pull-right filter">
+							<option>Filter</option>
+							<option>Filter1</option>
+							<option>Filter2</option>
+							<option>Filter3</option>
+							<option>Filter4</option>
+							<option>Filter5</option>
+						</select>
+					</div>
+				<table>
+					<tbody>
+						<tr>
+							<th>To / From</th>
+							<th>Date</th>
+							<th>Amount</th>
+							<th>Balance</th>
+						</tr>
+						<tr>
+							<td><a href="#">1WzGu3XbGpLcsXgi6WV8iUYVSwroucKce</a></td>
+							<td>2016-01-30 02:59:57</td>
+							<td>0.00048936 BTC </td>
+							<td>0.00809731 BTC</td>
+						</tr>
+						<tr>
+							<td><a href="#">1CZBzQwaVjfqwvRzDPTBDyvwrRYKJs2dis</a></td>
+							<td>2016-01-30 02:59:57</td>
+							<td>0.0007671 BTC</td>
+							<td>900.51 BTC</td>
+						</tr>
+						<tr>
+							<td><a href="#">1E74AgUiNQ4HJ1cUQuLS21t61MVrxumbwJ</a></td>
+							<td>2016-01-28 07:24:05 </td>
+							<td>0.00002519 BTC</td>
+							<td>0.00809731 BTC</td>
+						</tr>
+						<tr>
+							<td><a href="#">1WzGu3XbGpLcsXgi6WV8iUYVSwroucKce</a></td>
+							<td>2016-01-27 19:05:20 </td>
+							<td>0.0007671 BTC</td>
+							<td>7,035.81 BTC</td>
+						</tr>
+						<tr>
+							<td><a href="#">1CZBzQwaVjfqwvRzDPTBDyvwrRYKJs2dis</a></td>
+							<td>2016-01-27 12:59:19 </td>
+							<td>0.00035866 BTC</td>
+							<td>819.24 BTC</td>
+						</tr>
+						<tr>
+							<td><a href="#">1E74AgUiNQ4HJ1cUQuLS21t61MVrxumbwJ</a></td>
+							<td>2016-01-27 13:37:04</td>
+							<td>0.00035866 BTC</td>
+							<td>6,647.35 BTC</td>
+						</tr>
+						<tr>
+							<td><a href="#">1CZBzQwaVjfqwvRzDPTBDyvwrRYKJs2dis</a></td>
+							<td>2016-01-30 02:59:57</td>
+							<td>0.0007671 BTC</td>
+							<td>0.00809731 BTC</td>
+						</tr>
+						<tr>
+							<td><a href="#">1E74AgUiNQ4HJ1cUQuLS21t61MVrxumbwJ</a></td>
+							<td>2016-01-28 07:24:05 </td>
+							<td>0.00002519 BTC</td>
+							<td>3,160.06 BTC</td>
+						</tr>
+						<tr>
+							<td><a href="#">1WzGu3XbGpLcsXgi6WV8iUYVSwroucKce</a></td>
+							<td>2016-01-28 07:24:05 </td>
+							<td>0.0007671 BTC</td>
+							<td>900.51 BTC</td>
+						</tr>
+						<tr>
+							<td><a href="#">1WzGu3XbGpLcsXgi6WV8iUYVSwroucKce</a></td>
+							<td>2016-01-27 19:05:20 </td>
+							<td>0.00035866 BTC</td>
+							<td>7,035.81 BTC</td>
+						</tr>
+						<tr>
+							<td><a href="#">1CZBzQwaVjfqwvRzDPTBDyvwrRYKJs2dis</a></td>
+							<td>2016-01-27 13:37:04</td>
+							<td>0.00048936 BTC </td>
+							<td>819.24 BTC</td>
+						</tr>
+						<tr>
+							<td><a href="#">1E74AgUiNQ4HJ1cUQuLS21t61MVrxumbwJ</a></td>
+							<td>2016-01-27 12:59:19 </td>
+							<td>0.00035866 BTC </td>
+							<td>6,647.35 BTC</td>
+						</tr>
+						
+					</tbody>
+					
+				</table>
+				</div>
+				<nav class="pull-right paginator">
+				  <ul class="pagination">
+				    <li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">Вперед <i class="fa fa-caret-right"></i></span>
+				      </a>
+				    </li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">2</a></li>
+				    <li class="active"><a href="#">1</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true"><i class="fa fa-caret-left"></i> Назад</span>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
+				
+			</div>		
+			</div> <!-- end container -->
+		</div><!-- end #main -->
+	</div> <!-- end page-wrap -->	
+	<footer class="footer">
+		<div class="container">
+			<ul>
+				<li><a href="#">О нас</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Контакты</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Политика конфеденциальности</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Подключенные узлы</a></li>
+			</ul>			
+		</div>
+
+	</footer>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script type="text/javascript" src="js/graph.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

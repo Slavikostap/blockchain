@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blockchain</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="page-wrap">
+		<header>
+			<div class="header_top">
+				<div class="container">
+					<div class="row">	
+						<div class="header_top_left">
+							<a href="#"><b>BLOCKCHAIN</b></a>
+							<form class="navbar-form navbar">
+			       	          	<section id="search">
+					        		<label for="search-input"><i class="fa fa-search"></i></label>
+					        		<input id="search-input" class="form-control" placeholder="Поиск" autocomplete="off" spellcheck="false" autocorrect="off">
+					    		</section>
+			          		</form>
+						</div>
+
+						<div class="header_top_right">
+							<div class="bell"><i class="fa fa-bell"></i><div class="green_dot"></div></div>	
+							<span class="user"><b>Владислав</b></span>
+							<a href="#" id="mobile_menu"><i class="fa fa-bars mobile_bars"></i></a> 
+							<ul class="m_menu">
+								<li class="active"><a href=""><i class="fa fa-home"></i>Главная</a></li>
+								<li><a href=""><i class="fa fa-bar-chart"></i>Графики</a></li>
+								<li><a href=""><i class="fa fa-pie-chart"></i>Статистика</a></li>
+								<li><a href=""><i class="fa fa-briefcase"></i>Рынок</a></li>
+								<li><a href=""><i class="fa fa-cog"></i>API</a></li>
+								<li><a href=""><i class="fa fa-money"></i>Кошелек</a></li>
+								<li><a href=""><i class="fa fa-file-text"></i>Список магазинов</a></li>
+								<hr>
+								<li><a href=""><i class="fa fa-unlock"></i>Войти</a></li>
+								<li><a href=""><i class="fa fa-user"></i>Зарегестрироваться</a></li>
+							</ul>
+						</div>
+					</div>		
+				</div>	
+			</div>
+
+			<div class="header_bottom">
+				<div class="container">
+					<ul>
+						<li><a href=""><i class="fa fa-home"></i>Главная</a></li>
+						<li><a href=""><i class="fa fa-bar-chart"></i>Графики</a></li>
+						<li><a href=""><i class="fa fa-pie-chart"></i>Статистика</a></li>
+						<li><a href=""><i class="fa fa-briefcase"></i>Рынок</a></li>
+						<li><a href=""><i class="fa fa-cog"></i>API</a></li>
+						<li class="active"><a href=""><i class="fa fa-money"></i>Кошелек</a></li>
+						<li><a href=""><i class="fa fa-file-text"></i>Магазины</a></li>
+						
+					</ul>
+				</div>	
+			</div>
+		</header>
+		<div id="mywallet" class="api demowallet">
+			<div class="whiteblock">
+				<div class="container">
+					<h3>Демо-кошелёк</h3>
+					<ul class="second_list">
+						<li class="active"><a href="#">Wallet <br class="display_at_600"> Home</a></li>
+						<li><a href="#">My <br class="display_at_600"> Transactions</a></li>
+						<li><a href="#">Send <br class="display_at_600"> Money</a></li>
+						<li><a href="#">Receive <br class="display_at_600"> Money</a></li>
+						<li><a href="#">Import /<br class="display_at_600"> Export</a></li>
+					</ul>
+				</div>	
+			</div>
+			<div class="container sendmoney">
+			<!-- CONTENT GOES HERE -->
+				<!-- CONTENT GOES HERE -->
+
+				<div class="row">
+					<div class="col-sm-3 left-pannel">
+						<div class="block1">
+							<h6>TRANSACTION TYPE</h6>
+								<a href="#"><i class="fa fa-clock-o"></i>Quik send</a>
+								<a href="#" class="active"><i class="fa fa-share-alt"></i>Shared Coin</a>
+								<a href="#"><i class="fa fa-cog"></i>Customs</a>
+							
+
+							<h6>SEND VIA</h6>
+								<a href="#"><i class="fa fa-envelope"></i>Quik send</a>
+								<a href="#"><i class="fa fa-mobile"></i>SMS Message</a>
+
+							<h6>TOOLS</h6>
+								<a href="#"><i class="fa fa-book"></i>Address book</a>
+						</div>	
+						<div class="block1 block2">
+							<h6>Exchange Rates (1 BTC = )</h6>
+							<p><span class="currency">USD</span> <span><i class="fa fa-caret-up up"></i></span>375.35</p>
+							<p><span class="currency">ISK</span> <span><i class="fa fa-caret-up up"></i></span>48874.32</p>
+							<p><span class="currency">HKD</span> <span><i class="fa fa-caret-down down"></i></span>2922.61</p>
+							<p><span class="currency">TWD</span> <span><i class="fa fa-caret-up up"></i></span>12562.14</p>
+							<p><span class="currency">CHF</span> <span><i class="fa fa-caret-down down"></i></span>383.49</p>
+							<p><span class="currency">EUR</span> <span><i class="fa fa-caret-down down"></i></span>346.5</p>
+						</div>
+					</div>
+					<div class="col-sm-9">
+						<div class="block1">
+							<h3>Shared Coin</h3>
+							<p class="welome">A privacy service that helps users create joint transactions</p>
+							<form>
+								<div class="margin-top"><label>To:</label><input <input type="text" name="id" placeholder="Bitcoin address"><br></div>
+								<label>Amount:</label>
+								<div class="amount_input margin-top"><span class="input">BTC</span><input class="left-corner" <input type="text" name="BTC" placeholder="0.0"></div> - 
+								<div class="amount_input margin-top"><span class="input">$</span><input class="left-corner" <input type="text" name="USD" placeholder="0.0"><br></div><br>
+								<p class="small left-100px margin-top">Enter The Amount of Bitcoins to send</p><br>
+								<button type="button" class="btn btn-success left-100px">Send Payment</button>	
+							</form>
+						</div>
+						<div class="block1">
+							<h3>Something went wrong?</h3>
+							<p>When sending a shared coin transaction a number of intermediate addresses are used. If anything interupts the process or an error prevents the transaction from completing the coins may be left in an intermediate address. Click the button below to claim any coins left in intermediate addresses, this process can take several minutes to complete.</p>
+							<button type="button" class="btn btn-primary">Send Payment</button>	
+						</div>
+					</div>
+				</div>
+				
+					
+			</div> <!-- end container -->
+		</div><!-- end #main -->
+	</div> <!-- end page-wrap -->	
+	<footer class="footer">
+		<div class="container">
+			<ul>
+				<li><a href="#">О нас</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Контакты</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Политика конфеденциальности</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Подключенные узлы</a></li>
+			</ul>			
+		</div>
+
+	</footer>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

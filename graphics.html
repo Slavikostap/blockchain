@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blockchain</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header_top">
+			<div class="container">
+				<div class="row">	
+					<div class="header_top_left">
+						<a href="#"><b>BLOCKCHAIN</b></a>
+						<form class="navbar-form navbar">
+		       	          	<section id="search">
+				        		<label for="search-input"><i class="fa fa-search"></i></label>
+				        		<input id="search-input" class="form-control" placeholder="Поиск" autocomplete="off" spellcheck="false" autocorrect="off">
+				    		</section>
+		          		</form>
+					</div>
+
+					<div class="header_top_right">
+						<div class="bell"><i class="fa fa-bell"></i><div class="green_dot"></div></div>	
+						<span class="user"><b>Владислав</b></span>
+						<a href="#" id="mobile_menu"><i class="fa fa-bars mobile_bars"></i></a> 
+						<ul class="m_menu">
+							<li class="active"><a href=""><i class="fa fa-home"></i>Главная</a></li>
+							<li><a href=""><i class="fa fa-bar-chart"></i>Графики</a></li>
+							<li><a href=""><i class="fa fa-pie-chart"></i>Статистика</a></li>
+							<li><a href=""><i class="fa fa-briefcase"></i>Рынок</a></li>
+							<li><a href=""><i class="fa fa-cog"></i>API</a></li>
+							<li><a href=""><i class="fa fa-money"></i>Кошелек</a></li>
+							<li><a href=""><i class="fa fa-file-text"></i>Список магазинов</a></li>
+							<hr>
+							<li><a href=""><i class="fa fa-unlock"></i>Войти</a></li>
+							<li><a href=""><i class="fa fa-user"></i>Зарегестрироваться</a></li>
+						</ul>
+					</div>
+				</div>		
+			</div>	
+		</div>
+
+		<div class="header_bottom">
+			<div class="container">
+				<ul>
+					<li class="active"><a href=""><i class="fa fa-home"></i>Главная</abarli>
+					<li><a href=""><i class="fa fa-bar-chart"></i>Графики</a></li>
+					<li><a href=""><i class="fa fa-pie-chart"></i>Статистика</a></li>
+					<li><a href=""><i class="fa fa-briefcase"></i>Рынок</a></li>
+					<li><a href=""><i class="fa fa-cog"></i>API</a></li>
+					<li><a href=""><i class="fa fa-money"></i>Кошелек</a></li>
+					<li><a href=""><i class="fa fa-file-text"></i>Магазины</a></li>
+				</ul>
+			</div>	
+		</div>
+	</header>
+	<div id="graphics">
+		<div class="container">
+		<!-- CONTENT GOES HERE -->
+			<h3>Графики Биткоин</h3>
+			<p class="welcome">Различные графики и валютная статистика сети Биткоин</p>
+
+			<div class="row">
+				<div class="graph col-xs-3"><img src="img/graph1.jpg"></div>
+				<div class="col-xs-9">
+					<a href="#">Всего биткоинов в обращении </a>
+					<p>График, показывающий динамику общего количества добытых биткоинов.</p>
+				</div>
+			</div>	
+
+			<div class="row">
+				<div class="graph col-xs-3"><img src="img/graph2.jpg"></div>
+				<div class="col-xs-9">
+					<a href="#">Рыночная капитализация</a>
+					<p>График, показывающий общее число биткоинов в обращении * рыночная цена в USD.</p>
+				</div>
+			</div>
+
+			<div class="row">	
+				<div class="graph col-xs-3"><img src="img/graph3.jpg"></div>
+				<div class="col-xs-9">
+					<a href="#">Всего комиссии за транзакции</a>
+					<p>График, показывающий общую сумму комиссий за транзакции (в BTC), заработанные за сутки.</p>
+					<ul>	
+						<li><a href="#">Сумма комиссий (USD)</a></li>
+						<li><a href="#">Дефицит сети в день</a></li>
+					</ul>
+				</div>
+			</div>	
+
+			<div class="row">	
+				<div class="graph col-xs-3"><img src="img/graph4.jpg"></div>
+				<div class="col-xs-9">
+					<a href="#">Количество транзакций</a>
+					<p>Общее количество уникальных биткоин-транзакций в день.</p>
+					<ul>	
+						<li><a href="#">Общее количество транзакций</a></li>
+					</ul>	
+				</div>
+			</div>	
+
+			<div class="row">	
+				<div class="graph col-xs-3"><img src="img/graph5.jpg"></div>
+				<div class="col-xs-9">
+					<a href="#">Количество транзакций без учета популярных адресов</a>
+					<p>График, показывающий общее количество уникальных биткоин-транзакций в день за исключением тех, которые связаны с каким-либо из популярных адресов топ-100</p>
+					<ul>	
+						<li><a href="#">Популярные адреса</a></li>
+					</ul>
+				</div>
+			</div>	
+
+
+
+
+			</div>
+
+				
+		</div> <!-- end container -->
+	</div><!-- end #main -->
+
+	<footer class="footer">
+		<div class="container">
+			<ul>
+				<li><a href="#">О нас</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Контакты</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Политика конфеденциальности</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Подключенные узлы</a></li>
+			</ul>			
+		</div>
+
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+</html>

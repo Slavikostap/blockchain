@@ -1,0 +1,1778 @@
+/***********************************
+			HEADER
+************************************/
+html, body {
+  
+  min-width: 320px;
+  max-width: 100%;
+  height:100%;
+}
+
+body{
+	
+	font-family: 'Roboto', sans-serif;
+	background: #ecf2f6;
+	
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -60px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer, .page-wrap:after {
+  height: 60px; 
+}
+
+.header_top{
+	background: #3e506d;
+	color: white;
+}
+	.header_top_left{
+		float: left;
+	}
+		.header_top_left a{
+			float: left;
+			margin: 15px 10px;
+			padding: 7px;
+			text-decoration: none;
+		}
+		.header_top_left a:before{
+		    content: "";
+		    background-image: url('../img/logo.jpg');
+		    background-position: 0px 0px;
+		    height: 40px;
+		    width: 35px;
+		    display: block;
+		    float:left;
+		    left: 0;
+		    margin: -10px 10px 0 0px;
+		}
+
+		#search label{
+		    top: 17px;
+		    margin-left: 10px;
+    		color: black;
+    		position: absolute;
+    		color: #888;
+		}
+
+		#search input{
+			padding: 0px 5px 0px 30px;
+			width: 250px;
+		}
+
+	.header_top a,
+	.header_bottom a{
+		color: white;
+	}
+
+	.header_top form{
+		float:left;
+		margin: 5px 0;
+		padding: 10px;
+	}
+
+
+	.header_top_right{
+		float:right;
+		margin-top: 15px;
+		width: 220px;
+	}
+		.header_top_right .user{
+			float:left;
+			margin-top: 5px;
+		}
+		.header_top_right .user::after{
+		    content: "";
+		    background-image: url('../img/user.png');
+		    background-position: 0px 0px;
+		    height: 36px;
+		    width: 36px;
+		    display: block;
+		    float:right;
+		    left: 0;
+		    margin: -10px 5px 0 10px;
+
+		}
+
+		.header_top_right .bell{
+		    float: left;
+		    padding: 5px;
+		    background: white;
+		    width: 25px;
+		    height: 25px;
+		    border-radius: 50%;
+		    margin: 1px 10px;
+		}
+			.header_top_right .bell .fa-bell{
+				color: #3e506d;
+				vertical-align: super;
+				margin: 1px;
+			}
+
+			.header_top_right .bell .green_dot{
+			    width: 10px;
+			    height: 10px;
+			    background: #28c333;
+			    border-radius: 50%;
+			    border: 2px solid #FFF;
+			    float: right;
+			    position: relative;
+			    left: 7px;
+			    top: -11px;
+			}
+
+		.header_top_right .fa-bars{
+			font-size: 20px;
+			padding: 5px 10px;
+			margin-left: 10px;
+		}
+
+		.header_top_right .m_menu{
+		    position: absolute;
+		    background: #273141;
+		    width: 240px;
+		    padding: 15px;
+		    display: none;
+		    margin-left: -25px;
+		    z-index: 1;
+		}
+			.header_top_right .m_menu li{
+				padding: 3px 8px;
+			}
+			.header_top_right .m_menu li>a>i{
+				color: #a2a9bd;	
+			}
+			
+			.header_top_right .m_menu hr{
+				border-color: #3e506d;
+				margin: 15px;
+			}
+				.header_top_right .m_menu li:hover{
+					background: rgba(255,255,255,0.2);
+				}
+				.header_top_right .m_menu li a{
+					text-decoration: none;
+					display: block;
+				}
+					.header_top_right .m_menu li a i{
+						margin-right: 10px;
+					}
+/* end .header_top*/		
+
+
+
+.header_bottom{
+	background-color: #354052;
+}
+
+	.header_bottom li{
+		float: left;
+		font-size: 13px;
+		color: #a0abbf;
+		padding: 21px 4px 18px 4px;
+	}
+
+		.header_bottom li a{
+			color: #a0abbf;
+			text-decoration: none;
+			padding: 20px 5px;
+		}
+
+			.header_bottom li:hover,
+			.header_bottom li.active{
+				background: #273141;
+				border-bottom: solid 3px #748db4;
+				
+			}
+
+			.header_bottom li.active a{
+				color: #FFF;
+			}
+			.header_bottom li .fa{
+				font-size: 18px;
+				margin-right: 10px;
+				margin-bottom: -2px;
+				vertical-align: text-bottom;
+			}
+		
+		.header_top_right .fa-bars.active{
+			background: #273141;
+		}
+
+/*end .header_bottom*/
+
+@media only screen and (max-width: 730px){
+	.header_bottom ul{
+		text-align: center;
+		margin-bottom: 0;
+	}
+	.header_bottom li {
+    	padding: 0px;
+    	display: inline-block;
+    	float:none;
+	}
+	.header_bottom li .fa{
+		margin: 0 auto;
+		display: block;
+		width: 15px;
+
+	}
+	.header_bottom li a{
+		display: block;
+		padding: 10px 12px;
+	}
+
+	#search input{
+		width: 190px;
+	}
+
+}
+
+@media only screen and (max-width: 600px){
+
+	.header_top form,
+	#search input,
+	.header_top_left{
+		width: 100%;
+
+	}
+	.header_top_right{
+    	position: absolute;
+    	right:0;
+    	width: 180px;
+	}
+		.header_top_right .m_menu{
+			margin-left: 0;
+			margin-right: 0;
+			right:0;
+		}
+	.header_top_left a{
+		margin-bottom: 0;
+		font-size: 90%;
+	}
+	.header_top_right .bell{
+		width: 20px;
+		height: 20px;
+		margin: 5px;
+	}
+	.header_top_left a{
+		padding: 7px 0;
+	}
+	.header_top_left a:before {
+	    background-image: url('../img/logo_small.png');
+	    height: 14px;
+	    width: 35px;
+	    display: block;
+	    margin: 0px 7px 0 0px;
+	}
+		
+		.header_top_right .bell .fa-bell{
+			margin: -2px;
+		}
+	.header_top_right .user::after {
+	    height: 25px;
+	    width: 25px;
+	    float: right;
+	    left: 0;
+	    margin: -2px 0px 0 5px;
+	    background-size: cover;	
+	}    
+	.header_top_right .fa-bars{
+		margin-left: 5px;
+	}
+
+	.header_bottom li a{
+		font-size: 74%;
+	}
+}
+
+
+@media only screen and (max-width: 480px){
+	.header_bottom li a{
+		display: block;
+		padding: 10px 4px;
+		font-size: 60%;
+	}
+}
+/***********************************
+			FOOTER
+************************************/
+
+footer.footer{
+    width: 100%;
+    height: 60px;
+    background-color: #ecf2f6;
+    font-size: 12px;
+}
+
+	footer .container ul{
+		border-top: solid 1px #c6cfd9;
+		margin-top: 10px;
+	}
+		footer li{
+			float: left;
+			margin-top: 10px;
+		}
+
+			footer li a{
+				color: #354052;
+				padding: 15px;
+				text-decoration: none;
+				margin-top: 5px;
+			}
+
+				footer li a:hover{
+					color: #a0abbf;
+				}
+			
+
+			footer li.dot{
+			    font-size: 30px;
+	    		line-height: 5px;
+	    		margin-top: 5px;
+	    		margin-right: 0px;
+	    		color: #354052;
+			}
+
+@media only screen and (max-width: 600px){
+	footer .container ul{
+		text-align: center;
+	}
+		footer .container ul li{
+			display: inline-block;
+			float: none;
+		}
+			footer .container li.dot {
+			    font-size: 18px;
+			    margin-top: 10px;
+			    position: absolute;
+			    margin-left: -4px;
+			    margin-top: 11px;
+			}			
+			footer li a {
+				padding: 3px;
+				font-size: 6pt;
+			}
+}
+
+/*end footer*/
+
+/***********************************
+			MAIN, INDEX.HTML
+************************************/
+
+#main .content h3{
+	color: #5e6c80;
+	font-size: 19px;
+}
+
+#main .welcome{
+	color: #6f7e95;
+	font-size: 16px;
+	font-weight: 400;
+}
+	#main .welcome a{
+		color: #486591;
+		text-decoration: none;
+		font-size: 13px;
+	}
+
+#main .content table{
+	width: 100%;
+}
+
+	#main .content table th{
+		background: #6f7e95;
+		color: #FFF;
+		font-weight: normal;
+		padding: 10px;
+		padding-left: 20px;
+	}
+	#main .content table tr:nth-child(odd){
+		background: #f6f8fb;
+		color: #354052;
+		font-weight: normal;
+	}
+	#main .content table tr:nth-child(even){
+		background: #FFF;
+		color: #354052;
+	}
+		#main .content table tr td{
+			padding: 10px;
+			padding-left: 20px;
+		}
+		#main .content table tr a{
+			color: #4771b6;
+		}
+
+
+#main .content .row{
+	margin-top: 15px;
+}
+	#main .content .block_top{
+		background: #6f7e95;
+		color: #FFF;
+		padding: 15px;
+		margin-top: 15px;
+		border-top-right-radius: 3px;
+		border-top-left-radius: 3px;
+
+	}
+
+	#main .content .inside{
+		background: #FFF;
+		padding: 10px 15px;
+		border-bottom: solid 1px #eef0f1;
+		border-bottom-right-radius: 3px;
+		border-bottom-left-radius: 3px;
+	}
+		#main .content .inside form section{
+			width: 100%;
+			margin-top: 10px;
+		}
+		#main .content .inside form section input{
+			float:left;
+			width: 75%;
+			margin: 0;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			border-top-left-radius: 17px;
+			border-bottom-left-radius: 17px;
+			border: solid 2px #465b7a;
+		}
+		#main .content .inside form section button{
+			width: 24%;
+			margin: 0;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			border-top-right-radius: 17px;
+			border-bottom-right-radius: 17px;
+			background: #465b7a;
+			color: #FFF;
+			border: none;
+			height: 34px;
+			margin-left: -5px;
+		}
+
+		#main .content .last_transactions .inside p{
+			color: #4771b6;
+			font-size: 13px;
+		}
+			#main .content .last_transactions .inside p span{
+				font-size: 12px;
+				color: #a2a2a2;
+			}
+
+		#main .content .last_transactions .inside h2{
+			color: #354052;
+			font-size: 24px;
+		}
+			
+		#main .content .last_transactions .inside h2:before{
+			content: "";
+		    background-image: url(../img/edinarlogo.png);
+		    background-position: 0px 0px;
+		    height: 35px;
+		    width: 35px;
+		    display: block;
+		    float:left;
+		    left: 0;
+		    margin: -5px 10px 0 0px;
+		}
+
+	#main .content .search p{
+		color: #6d6d6d;
+		font-size: 13px;
+	}
+
+	#main .content .news_block{
+		background: #FFF;
+		padding: 11px;
+		border-bottom: solid 1px #eef0f1;
+	}
+
+	#main .content .news_block a{
+		color: #6d6d6d;
+		text-decoration: none;
+	}
+	#main .content .news_block p{
+		font-size: 12px;
+		color: #a9a9a9;
+	}
+
+	#main .content .news{
+		height: 303px;
+		overflow: scroll;
+	}
+	
+	#main .content table tr.display_none_at_small_width{
+		display: table-row;
+	}
+
+	#main .content table tr.display_at_small_width{
+		display: none;
+	}
+
+@media only screen and (max-width: 678px){
+	#main .content table th {
+		padding: 15px 5px;
+	}
+	#main .content table tr td{
+		padding: 10px 5px;
+	}
+
+	#main .content table tr.display_none_at_small_width{
+		display: none;
+	}
+	#main .content table tr.display_at_small_width{
+		display: table-row;
+	}
+
+	#main{
+		text-align: center;
+	}
+}
+
+
+
+@media only screen and (max-width: 500px){
+	#main .content table{
+		font-size: 70%;
+	}	
+	#main .welcome{
+		font-size: 12px;
+	}
+}
+
+/***********************************
+		GRAPHICS
+************************************/
+
+#graphics h3{
+	color: #5e6c80;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+#graphics .welcome{
+	color: #6f7e95;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+#graphics .row{
+	background: #FFF;
+	padding: 20px;
+	border-bottom: 1px solid #EEE;
+}
+
+	#graphics .row a{
+		color: #4771b6;
+		text-decoration: none;
+		font-size: 16px;
+	}
+
+	#graphics .row p{
+		color: #909090;
+		font-size: 14px;
+	}
+
+		#graphics .row li{
+			list-style: initial;
+			margin-left: 15px;
+		}
+			#graphics .row li a{
+				font-size: 12px;
+			}	
+@media only screen and (max-width: 600px){
+	#graphics,
+	#graphic{
+		text-align: center;
+	}
+	#graphics .row{
+		padding: 10px;
+		text-align: left;
+	}		
+	#graphic .info{
+		margin-top: 40px;
+	}
+}	
+/*end graphics row*/
+
+/***********************************
+			MARKETS
+************************************/
+#markets .margin{
+	margin-top: 30px;
+}
+
+#markets .sidebar{
+	border-radius: 3px;
+	padding-left: 0;
+}
+	#markets .sidebar div{
+		padding: 5px 15px;
+		background: #FFF;
+		
+	}
+		#markets .sidebar div:last-child{
+			border-bottom-right-radius: 3px;
+			border-bottom-left-radius: 3px;
+		}
+		#markets .sidebar div h2{
+			float: left;
+			font-size: 24px;
+			color: #354052;
+			margin: 5px 0;
+			padding: 5px 0;
+		}
+
+		#markets .sidebar .top{
+			font-size: 12px;
+			color: #4c4c4c;
+			overflow: auto;
+			border-top-right-radius: 3px;
+			border-top-left-radius: 3px;
+		}
+
+		#markets .sidebar .up{
+			color: #85b45b;
+		}
+		#markets .sidebar .down{
+			color: #df1717;
+		}
+			#markets .sidebar span.up:before{
+				margin-top: 1px;
+			    float: left;
+			    content: "";
+			    width: 10px;
+			    height: 11px;
+			    margin-right: 2px;
+			    border-left: 5px solid transparent;
+			    border-right: 5px solid transparent;
+			    border-bottom: 8px solid #85b45b;
+			}
+
+			#markets .sidebar span.down:before{
+				margin-top: 4px;
+			    float: left;
+			    content: "";
+			    width: 10px;
+			    height: 11px;
+			    margin-right: 2px;
+			    border-left: 5px solid transparent;
+			    border-right: 5px solid transparent;
+			    border-top: 8px solid #df1717;
+			}
+
+	#markets .sidebar .currency{
+		border-top: solid 1px #eef0f1;
+		border-bottom: solid 1px #eef0f1;
+		padding: 12px 15px;
+	}
+		#markets .sidebar .currency span{ 
+			margin-right: 25px;
+		}
+		
+	#markets .sidebar div{
+		display: block;
+		overflow: auto;
+		font-size: 13px;
+	}
+	
+		#markets .sidebar div p{
+			float:left;
+			margin-top: 14px;
+		}
+
+	#container,
+	#container .highcharts-container{
+		border-radius: 3px;
+	}
+
+#markets .info{
+	background: #FFF;
+	margin-top: 20px;
+	text-align: center;
+	padding: 20px;
+	border-radius: 3px;
+}
+	#markets .info p{
+		font-size: 15px;
+		color: #354052;
+		margin-top: 
+	}
+
+	#markets .info h2{
+		font-size: 24px;
+		color: #5ca65c;
+		margin: 0;
+	}
+
+	#markets .info div:nth-child(2){
+		border-right: solid 1px #e6e6e6;
+		border-left: solid 1px #e6e6e6;
+	}
+
+#markets .header{
+	background: #6f7e95;
+	color: #FFF;
+	padding: 15px;
+	margin-top: 15px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+#markets .troll_box{
+	padding-left: 0;
+}
+
+#markets .inside{
+	height: 300px;
+	overflow: scroll;
+	}
+	#markets .troll_box .inside div,
+	#markerts .troll_box .troll_news{
+		background: #FFF;
+		padding: 10px;
+		overflow: auto;
+		color: #6d6d6d;
+		font-size: 14px;
+		border-bottom: solid 1px #e6e6e6;
+	}
+
+	#markets .troll_box div a{
+		font-size: 12px;
+		color: #186a9b;
+		text-decoration: none;
+	}
+
+	#markets .troll_box div:not(:first-child) .time_info{
+		font-size: 12px;
+		color: #a9a9a9;	
+	}
+
+	#markets div.latest_headlines{
+		padding-right: 0;
+	}
+		#markets div.latest_headlines.col-sm-7 > div.inside > div,
+		#markets div.latest_headlines > div:not(:first-child){
+			padding: 10px;
+			background: white;
+			border-bottom: solid 1px #e6e6e6;
+			overflow: auto;
+		}
+			#markets div.latest_headlines.col-sm-7 > div.inside > div p{
+				font-size: 14px;
+				color: #6d6d6d;
+				margin-bottom: 0;
+			}
+				#markets div.latest_headlines.col-sm-7 > div.inside > div p.time_info{
+					font-size: 12px;
+					color: #a9a9a9;
+				}
+
+@media only screen and (max-width: 768px){
+	#markets div.latest_headlines {
+	    padding-right: 15px;
+	}
+	#markets .troll_box,
+	#markets .sidebar{
+    	padding-left: 15px;
+	}
+
+	#markets .sidebar{
+		width: 60%;
+		margin: 15px auto;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#markets .sidebar {
+	    width: 100%;
+	}
+}
+
+/***********************************
+			Graphic
+************************************/
+
+#graphic .margin{
+	margin-top: 60px;
+}
+
+#graphic .info{
+	font-size: 12px;
+	color: #354052;
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px){	
+	#graphic .info{
+		margin-top: 40px;
+	}
+}	
+/***********************************
+			Statistics
+************************************/
+.statistics table td a{
+	float: right;
+}
+
+.statistics .table {
+	margin-top: 30px;
+}
+
+#main .content table tbody tr td h3{
+	color: #5ca65c;
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+
+#main .content table tbody tr td p{
+	max-width: 90%;
+	float:left;
+	font-size: 13px;
+	color: #3f3f3f;
+}
+
+#main table.table tbody tr:nth-child(1){
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.statistics table.table .wide{
+	width: 30%;
+}
+.statistics table.table .image:before{
+	content: "";
+    background-image: url('../img/money.jpg');
+    background-position: 0px 0px;
+    height: 57px;
+    width: 57px;
+    display: block;
+    float:left;
+    left: 0;
+    margin: -10px 10px 0 0px;	
+}
+
+@media only screen and (max-width: 990px){
+	.statistics table.table .image:before{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#main .content table tbody tr td h3{
+		font-size: 100%;
+	}
+	#main .content table tbody tr td p{
+		font-size: 100%;
+	}
+	#main .content table th{
+		font-size: 9pt;
+	}
+}
+
+
+/***********************************
+			My Wallet
+************************************/
+
+.floatRight{
+	float:right;
+}
+#mywallet button{
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#mywallet .block1{
+	background: #fff;
+	padding: 20px;
+	border-radius: 3px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+
+#mywallet p, 
+#mywallet li{
+	color:#6d6d6d;
+	list-style: initial;
+}
+
+#mywallet li{
+	margin-left: 10px;
+}
+
+#mywallet .col-sm-4 p,
+#mywallet .col-sm-4 li{
+	font-size: 13px;
+}
+
+#mywallet a{
+	color: #3677a3;
+	text-decoration: none;
+}
+
+#mywallet h3{
+	font-size: 19px;
+	font-weight: bold;
+	color: #5e6c80;
+}
+
+#mywallet .welcome{
+	font-size: 16px;
+	color: #6f7e95;
+}
+
+#mywallet .block1 h3{
+	font-size: 17px;
+	color: #6d6d6d;
+}
+
+#mywallet .leftline{
+	padding-left: 15px;
+	border-left: solid 5px #c7d1d7;
+	margin-top: 20px;
+}
+
+#mywallet .center-align{
+	text-align: center;
+}
+	#mywallet .center-align button{
+		display: inline-block;
+		width: 50%;
+	}
+
+	#mywallet .leftline a{
+		color: #9c9c9c;
+		text-decoration: none;
+		font-size: 12px;
+	}
+
+#mywallet .reliability:before,
+#mywallet .multifunc:before,
+#mywallet .keepcontrol:before,
+#mywallet .simpleuse:before,
+#mywallet .bitcoincompanies:before,
+#mywallet .instantdeposit:before{
+	content: "";
+	background-image: url('../img/icons.png');
+	background-position: 0px 0px;
+	height: 35px;
+	width: 35px;
+	display: block;
+	float:left;
+	left: 0;
+	margin: -10px 10px 0 0px;
+}
+
+#mywallet .multifunc:before{
+	background-position: -39px 0px;
+}
+#mywallet .keepcontrol:before{
+	background-position: -78px 0px;
+}
+#mywallet .simpleuse:before{
+	background-position: -117px 0px;
+}
+#mywallet .bitcoincompanies:before{
+	background-position: -150px 0px;
+	margin: 0px 10px 0 0px;
+}
+#mywallet .instantdeposit:before{
+	background-position: -186px 0px;
+}
+
+#mywallet .block1 .row{
+	margin-bottom: 30px;
+}
+
+#mywallet .block1 .buttons .btn-success,
+#mywallet .block1 .buttons .btn-primary{
+	width: 50%;
+	min-width: 180px;
+}
+
+#mywallet .block1 .buttons .btn-success{
+	float: right;
+}
+
+#mywallet .wallet1,
+#mywallet .wallet2,
+#mywallet .wallet3,
+#mywallet .wallet4,
+#mywallet .wallet5,
+#mywallet .wallet6{
+	content: "";
+	background-image: url('../img/wallets.jpg');
+	background-position: -580px 0px;
+	height: 70px;
+	width: 105px;
+	display: block;
+	margin: 0 auto;
+}
+
+#mywallet .wallet2{background-position: 220px 0px;}
+#mywallet .wallet3{background-position: 325px 0px;}
+#mywallet .wallet4{background-position: 448px 0px;}
+#mywallet .wallet5{background-position: 565px 0px;}
+#mywallet .wallet6{background-position: 685px 0px;}
+	
+#mywallet .margin-top{
+	margin-top: 50px;
+}	
+
+.display_at_small_width{
+		display: none;
+	}
+
+
+@media only screen and (max-width: 990px){
+	#mywallet .btn-success{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	#mywallet .reliability:before,
+	#mywallet .multifunc:before,
+	#mywallet .keepcontrol:before,
+	#mywallet .simpleuse:before,
+	#mywallet .bitcoincompanies:before,
+	#mywallet .instantdeposit:before{
+		display: none;
+	}
+}	
+
+@media only screen and (max-width: 768px){
+	#mywallet .btn-success{
+		font-size: 14px;
+	}
+	#mywallet .reliability:before,
+	#mywallet .multifunc:before,
+	#mywallet .keepcontrol:before,
+	#mywallet .simpleuse:before,
+	#mywallet .bitcoincompanies:before,
+	#mywallet .instantdeposit:before{
+		display: block;
+	}
+
+	.display-none{
+		display: none;
+	}
+	.display_none_at_small{
+		display:none;
+	}
+	.display_at_small_width{
+		display: block;
+	}
+	#mywallet .block1 .row ul{
+		text-align: left;
+	}
+	.floatRight{
+		float:none;
+		display: block;
+	}
+	#mywallet .block1 .row{
+		margin-bottom: 0;
+	}
+		#mywallet .block1 .row .col-xs-6{
+			margin-bottom: 5px;
+		}
+}	
+
+@media only screen and (min-width: 1200px){
+	.display-none1{
+		display: none;
+	}
+}
+@media only screen and (max-width: 600px){
+	#mywallet{
+		text-align: center;
+	}
+}
+/***********************************
+				API
+************************************/
+
+#mywallet.api button{
+	padding: 5px 20px;
+	width: auto;
+}
+
+#mywallet.api h4{
+	font-size: 17px;
+	color: #6d6d6d;
+}
+
+#mywallet.api h5{
+	font-size: 15px;
+	color: #6d6d6d;
+}
+
+
+#mywallet.api h6{
+	font-size: 12px;
+	color: #8c8c8c;
+}
+
+#mywallet.api p{
+	font-size: 13px;
+	color: #6d6d6d;
+}
+
+#mywallet.api .block1{
+	padding: 20px 0px;
+}
+
+#mywallet.api .block1 p{
+	margin-top: 15px;
+}
+
+#mywallet.api .col-sm-6{
+	padding: 0 25px;
+}
+
+.api .btn-primary{
+	background: #5e7497;
+	font-size: 14px;	
+}
+
+.api .right-line {
+	border-right: solid 1px #eeeeee;
+}
+
+.api .margin-top{
+	margin-top: 30px;
+}
+
+.api .bottom_line{
+	border-bottom: solid 1px #eeeeee;
+	margin-bottom: 30px;
+}
+
+#mywallet.api .green button{
+	padding: 5px 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#mywallet.api .green .btn-success{
+	background: #d2f0d2;
+	color: #51a551;
+	font-size: 15px;
+	font-weight: bold;
+	border: none;
+}
+
+#mywallet.api .green .btn-success.active{
+	background: #57af57;
+	color: #fff;	
+}
+
+#mywallet.api .green h5{
+	color: #4f7b4f;
+}
+
+#mywallet.api .green .green_code{
+	padding: 15px;
+	padding-left: 20px;
+	border-left: 5px solid #85ab85;
+	background: #f2fcf2;
+
+}
+
+#mywallet .payment:before,
+#mywallet .wallet_api:before,
+#mywallet .create_wallet:before,
+#mywallet .blockchain_api:before,
+#mywallet .simple_api:before,
+#mywallet .websocket:before,
+#mywallet .exchange_courses:before,
+#mywallet .graphics:before{
+    content: "";
+    background-image: url('../img/icons.png');
+    background-position: -233px 0px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+    left: 0;
+    margin: 0px 10px 0 0px;
+}
+
+
+#mywallet .wallet_api:before{
+	background-position: -277px 0px;
+}
+
+#mywallet .create_wallet:before{
+	background-position: -322px 0px;
+	margin: -13px 10px 0 0px;
+}
+
+#mywallet .blockchain_api:before{
+	background-position: -410px 0px;
+	margin: -13px 10px 0 0px;
+}
+#mywallet .simple_api:before{
+	background-position: -455px 0px;
+	margin: -13px 10px 0 0px;
+}
+#mywallet .websocket:before{
+	background-position: -500px 0px;
+	margin: -13px 10px 0 0px;
+}
+
+#mywallet .exchange_courses:before{
+	background-position: -545px 0px;
+	margin: -13px 10px 0 0px;	
+}
+
+#mywallet .graphics:before{
+	background-position: -587px 0px;
+	margin: -13px 10px 0 0px;	
+}
+
+
+/***********************************
+			Store List
+************************************/
+
+#mywallet.store_list .block1{
+	margin-top: 10px;
+}
+
+.store_list .block{
+	display: block;
+	overflow: auto;
+}
+
+#mywallet.store_list h2.letter{
+	font-size: 30px;
+	color:#3e506d;
+}
+
+.store_list select{
+	margin-left: 10px;
+}
+
+
+.store_list .block1 a{
+	font-size: 13px;
+	color: 	#186a9b;
+}
+
+@media only screen and (max-width: 680px){
+	#mywallet.store_list .welcome{
+		font-size: 14px;
+	}
+
+	#mywallet.store_list .floatRight{
+		float:none;
+		display: inline-block;
+	}
+	#mywallet.store_list h2.letter {
+    	display: inline-block;
+    	color: #3e506d;
+    	background: white;
+    	padding: 0 15px;
+	}
+	#mywallet.store_list .display_at_small_width{
+		margin-top: -25px;
+	}
+	#mywallet.store_list hr{
+		border: solid 1px #93A4C0;
+	}
+}
+
+/***********************************
+			Demo Wallet
+************************************/
+
+.demowallet p{
+	font-size: 13px;
+}
+
+#mywallet.demowallet .center-align{
+	text-align: center
+}
+
+#mywallet.demowallet .center-align p,
+#mywallet.demowallet .center-align input,
+#mywallet.demowallet .center-align button{
+	display: inline-block;
+}
+
+#mywallet.demowallet button.right-pannel{
+	background: #859aba;
+	border:none;
+}
+
+#mywallet.demowallet h3.welcome{
+	font-size: 19px;
+	color: #5e6c80;
+	font-weight: bold;
+}
+
+#mywallet.demowallet .block1 p{
+	color: #6d6d6d;
+	font-size: 13px;
+	margin-top: 0;	
+}
+
+#mywallet.demowallet .block1 a{
+	font-size: 12px;
+}
+
+#mywallet.demowallet input{
+	margin-top: 10px;
+	max-width: 300px;
+	border-radius: 15px;
+	border: solid 1px #6f7e95;
+	padding: 5px;
+	padding-left: 15px;
+	font-size: 12px;
+}
+
+.demowallet .whiteblock{
+	width: 100%;
+	background: #FFF;
+	overflow: auto;
+	display: block;
+}
+
+#mywallet.demowallet .whiteblock li{ 
+	list-style: none;
+	float: left;
+	color: #3e506d;
+	font-weight: normal;
+	padding: 15px 0;
+}	
+
+#mywallet.demowallet .whiteblock li a{
+	padding: 15px;
+}
+
+#mywallet.demowallet .whiteblock li.active{
+	border-bottom: solid 3px #6382b5;
+	font-weight: medium;
+}
+
+#mywallet.demowallet .whiteblock li:hover{
+	border-bottom: solid 3px #dce8fc;
+}
+
+.display_at_600{
+		display: none;
+	}
+
+@media only screen and (max-width: 730px){
+	#mywallet.demowallet .whiteblock li a{
+		padding: 3px;
+	}
+}
+
+
+.demowallet .block1 .left-line {
+	border-left: solid 1px #eeeeee;
+}
+
+.demowallet .margin-top-25{
+	margin-top: -25px;
+}
+
+@media only screen and (max-width: 990px){
+	.demowallet .second_list{
+		margin-top: 0px;
+	}
+}
+
+@media only screen and (max-width: 600px){
+
+	#mywallet.demowallet{
+		text-align: center;
+	}
+	#mywallet.demowallet .whiteblock ul.second_list{
+		text-align: center;
+		background: #F7F8FC;	
+	}
+		#mywallet.demowallet .whiteblock li{
+			padding: 3px 0px;
+			margin: 4px;
+			text-align: center;
+		    display: inline-block;
+	    	float: none;
+	    	width: 16%;
+		}
+
+			#mywallet.demowallet .whiteblock li a{
+				font-size: 90%;
+			    text-align: center;
+			    display: block;
+			    padding: 5px 8px;
+			}
+	
+	#mywallet.demowallet .whiteblock li.active {
+	    border-bottom: solid 3px #6382b5;
+	    background: #40516f;
+	    
+	}
+		#mywallet.demowallet .whiteblock li.active a{
+			color: #fff;	
+		}
+
+	.display_at_600{
+		display: block;
+	}
+	#mywallet h3{
+		font-size: 110%;
+	}
+	.demowallet .second_list {
+    	margin-left: -10px;
+    	margin-right: -10px;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	#mywallet.demowallet .whiteblock li a{
+		font-size: 60%;
+	}
+
+	#mywallet.api p{
+		font-size: 11px;
+	}
+}
+
+/***********************************
+			Transactions
+************************************/
+
+#main .content table tbody td,
+#main .content table tbody td a{
+	text-align: left;
+	font-style: 13px;
+	color: #354052;
+}
+
+#main div.overflow,
+.transactions .overflow{
+	overflow: auto;
+	display: block;
+	text-align: right;
+}
+
+#main div.overflow img{
+	display: inline-block;
+}
+
+#mywallet.api .btn-primary,
+#mywallet.transactions.api button.api .btn-primary {
+	font-size: 12px;
+}
+
+#mywallet.transacitons ul.backup li{
+	list-style: none;
+	float:left;
+	background: #859aba;
+	color: #fff;
+	margin:0;
+	border-right: solid 1px #6e809c;
+}
+	#mywallet.transacitons ul.backup li a{
+		color: #fff;
+		padding: 7px 15px;
+		display: block;
+	}
+
+	#mywallet.transacitons ul.backup li:first-child{
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+	}
+
+	#mywallet.transacitons ul.backup li:last-child{
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+		border-right: none;
+	}
+
+	@media only screen and (max-width: 990px){
+		#mywallet.transacitons ul.backup li a{
+			padding: 7px 7px;
+		}
+	}
+
+	@media only screen and (max-width: 767px){
+		#mywallet.transacitons ul.backup li a{ 
+			padding: 7px 15px;
+		}
+	}
+
+	@media only screen and (max-width: 600px){
+		#mywallet.transacitons ul.backup {
+			text-align: center;
+		}
+			#mywallet.transacitons ul.backup li{
+				margin: 2px;
+				border-radius: 5px;
+				border-right: 0;
+				display: inline-block;
+				float: none;
+			}
+		#main div.overflow,
+		.transactions .overflow{
+			text-align: center;
+		}
+	
+	}
+/***********************************
+		My Transactions Table
+************************************/
+.transactions_container p{
+	display: inline-block;
+}
+
+.transactions_container .filter {
+	min-width: 100px;
+}
+
+.transactions_container table{
+	border-radius: 5px;
+}
+
+.mytransactions .pagination{
+	text-align: right;
+}
+.mytransactions .pagination li a,
+.mytransactions .pagination li{ 
+	float: right;
+	border: none;
+	border-radius: 5px;
+}
+
+#mywallet .paginator a{
+	color: #a8a8a8;
+	font-size: 12px;
+}
+	#mywallet .paginator li.active a{
+	color: #FFF;
+	background: #7b8eba;
+}
+	#mywallet .paginator li .fa-caret-left{
+		margin-right: 5px;
+	}
+	#mywallet .paginator li .fa-caret-right{
+		margin-left: 5px;
+	}
+
+/***********************************
+			Send Money
+************************************/
+
+#mywallet.api .sendmoney .block1{
+	padding: 10px 30px;
+}
+
+
+#mywallet.api .sendmoney .left-pannel h6{
+	color: #777;
+	font-size: 13px;
+}
+
+#mywallet.api .sendmoney .left-pannel .block{
+	padding: 25px;
+}
+
+
+#mywallet.api .sendmoney .left-pannel a{
+	display: block;
+	padding: 5px;
+	margin: 5px;
+	font-size: 13px;
+	color: #3e506d;
+
+}	
+	#mywallet.api .sendmoney .left-pannel a.active{
+		background: #e1e9f6;
+	}
+
+	#mywallet.api .sendmoney .left-pannel a i{
+		margin-right: 5px;
+	}
+
+	#mywallet.api .sendmoney .left-pannel .currency{
+		width: 40px;
+		display: inline-block;
+	}
+
+	#mywallet.api .sendmoney .left-pannel .up,
+	#mywallet.api .sendmoney .left-pannel .down{
+		color: green;
+		margin-left: 20px;
+		margin-right: 40px;
+		font-size: 15px;
+	}
+
+	#mywallet.api .sendmoney .left-pannel .down{
+		color: red;
+	}
+
+#mywallet.demowallet .sendmoney form input{
+	border-radius: 5px;	
+	border-color: #d2dde4;
+}
+
+#mywallet.demowallet .sendmoney .input{
+	vertical-align: -1px;
+    background: #d2dde4;
+    padding: 6px 10px 7px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+#mywallet.demowallet .sendmoney label{
+	text-align: right;
+	width: 100px;
+	margin-right: 15px;
+}
+
+#mywallet.demowallet .sendmoney form input.left-corner{
+	border-top-left-radius: 0;
+	border-bottom-left-radius:0;
+	width: 100px;
+}
+	
+
+	#mywallet.demowallet .sendmoney input {
+		margin-top: 0px;
+	}
+
+	#mywallet.demowallet .sendmoney .amount_input{
+		display: inline-block;
+	}
+
+	.left-100px{
+		margin-left: 120px;
+		display: inline-block;
+	}
+
+	#mywallet.demowallet .sendmoney .margin-top{
+		margin-top: 20px;
+	}
+
+	.hide1{
+	    width: 220px;
+	    float: left;
+	    position: absolute;
+	    left: -220px;
+	    z-index: 5;
+	    background: #DDD;
+	    display: block;
+	}
+		.hide1:after{
+			content: "\f101";
+		    font-family: FontAwesome;
+		    font-style: normal;
+		    font-weight: normal;
+		    text-decoration: inherit;
+		    color: #777;
+		    font-size: 18px;
+		    padding-right: 0.5em;
+		    position: absolute;
+		    top: 0px;
+		    right: -25px;
+		    border-radius: 3px;
+		    background: #DDD;
+		    padding-left: 10px;
+		    padding: 10px;
+		}
+
+@media only screen and (max-width: 1200px){
+	#mywallet.api .sendmoney .block1{
+		padding: 20px;
+	}	
+}
+
+@media only screen and (max-width: 990px){
+	#mywallet.api .sendmoney .block1{
+		padding: 10px;
+	}
+	#mywallet.api .sendmoney .left-pannel .currency{
+		width: 30px;
+	}
+
+	#mywallet.api .sendmoney .left-pannel .up,
+	#mywallet.api .sendmoney .left-pannel .down{
+		margin-left: 10px;
+		margin-right: 20px;
+	}
+}
+@media only screen and (max-width: 600px){
+	#mywallet.demowallet .sendmoney label{
+		width: 60px;
+	}
+}
+
+
+/***********************************
+				FAQ
+************************************/
+.panel{
+	margin-top: 20px;
+	border-radius: 0;
+}
+	.panel-default>.panel-heading{
+		background: #fff;
+		padding-left: 50px;
+		color: #fff;
+		border-radius: 0;
+	}
+		.panel-default>.panel-heading .panel-title{
+			color: #6f7e95;
+		}
+
+
+	.plus{
+	    display: block;
+	    float: left;
+	    padding: 10px 15px;
+	    margin-top: -10px;
+	    margin-left: -50px;
+	    background: #6f7e95;
+	    color: #fff;
+	    cursor: pointer;
+	    width: 38px;
+	}
+
+	.panel-default>.panel-heading.activePanel,
+	#mywallet .panel-default>.panel-heading.activePanel a{
+		color: #fff;
+		background: #6f7e95;
+	}
+
+	.panel-default>.panel-heading.activePanel .plus{
+		background: #354052;
+	}
+
+
+.faq h3{
+	margin-top: 2em;
+}
+
+
+@media only screen and (max-width: 600px){
+	#mywallet.demowallet .whiteblock li {
+ 	   width: 30%;
+	}	
+}
+
+

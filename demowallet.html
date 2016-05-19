@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blockchain</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="page-wrap">
+		<header>
+			<div class="header_top">
+				<div class="container">
+					<div class="row">	
+						<div class="header_top_left">
+							<a href="#"><b>BLOCKCHAIN</b></a>
+							<form class="navbar-form navbar">
+			       	          	<section id="search">
+					        		<label for="search-input"><i class="fa fa-search"></i></label>
+					        		<input id="search-input" class="form-control" placeholder="Поиск" autocomplete="off" spellcheck="false" autocorrect="off">
+					    		</section>
+			          		</form>
+						</div>
+
+						<div class="header_top_right">
+							<div class="bell"><i class="fa fa-bell"></i><div class="green_dot"></div></div>	
+							<span class="user"><b>Владислав</b></span>
+							<a href="#" id="mobile_menu"><i class="fa fa-bars mobile_bars"></i></a> 
+							<ul class="m_menu">
+								<li class="active"><a href=""><i class="fa fa-home"></i>Главная</a></li>
+								<li><a href=""><i class="fa fa-bar-chart"></i>Графики</a></li>
+								<li><a href=""><i class="fa fa-pie-chart"></i>Статистика</a></li>
+								<li><a href=""><i class="fa fa-briefcase"></i>Рынок</a></li>
+								<li><a href=""><i class="fa fa-cog"></i>API</a></li>
+								<li><a href=""><i class="fa fa-money"></i>Кошелек</a></li>
+								<li><a href=""><i class="fa fa-file-text"></i>Список магазинов</a></li>
+								<hr>
+								<li><a href=""><i class="fa fa-unlock"></i>Войти</a></li>
+								<li><a href=""><i class="fa fa-user"></i>Зарегестрироваться</a></li>
+							</ul>
+						</div>
+					</div>		
+				</div>	
+			</div>
+
+			<div class="header_bottom">
+				<div class="container">
+					<ul>
+						<li><a href=""><i class="fa fa-home"></i>Главная</a></li>
+						<li><a href=""><i class="fa fa-bar-chart"></i>Графики</a></li>
+						<li><a href=""><i class="fa fa-pie-chart"></i>Статистика</a></li>
+						<li><a href=""><i class="fa fa-briefcase"></i>Рынок</a></li>
+						<li><a href=""><i class="fa fa-cog"></i>API</a></li>
+						<li class="active"><a href=""><i class="fa fa-money"></i>Кошелек</a></li>
+						<li><a href=""><i class="fa fa-file-text"></i>Магазины</a></li>
+					</ul>
+				</div>	
+			</div>
+		</header>
+		<div id="mywallet" class="api demowallet">
+			<div class="whiteblock">
+				<div class="container">
+					<h3>Демо-кошелёк</h3>
+					<ul>
+						<li class="active"><a href="#">Wallet Home</a></li>
+						<li><a href="#">My Transactions</a></li>
+						<li><a href="#">Send Money</a></li>
+						<li><a href="#">Receive Money</a></li>
+						<li><a href="#">Import / Export</a></li>
+					</ul>
+				</div>	
+			</div>
+			<div class="container">
+			<!-- CONTENT GOES HERE -->
+				<!-- CONTENT GOES HERE -->
+
+				<div class="row block1">
+					<div class="col-sm-6 center-align margin-top">
+						<h3 class="welcome">Добро пожаловать!</h3>
+						<p>Пожалуйста, введи свои данные</p>
+						<form>
+							<input <input type="text" name="id" placeholder="Идентификатор"><br>
+							<input <input type="password" name="password" placeholder="Пароль"><br>
+							<button type="button" class="btn btn-primary">Открыть демо-счёт</button>	
+						</form>
+						<a href="">Click here to try the new version of our wallet.</a> 
+					</div>
+					<div class="col-sm-6 left-line">
+						<h5>Forgotten Something? </h5>
+						<p>Help! I've locked myself out of my account</p>
+
+						<h5>Lost Identifier or Alias </h5>
+						<p>If you have lost your wallet identifier first check the confirmation email you received during sign up. Can't find the email? Click the button below and we can send you a new one.</p>
+						<button type="button" class="btn btn-primary right-pannel">Recover Wallet</button>
+						<button type="button" class="btn btn-primary right-pannel">Import Backup</button>
+
+						<h5>Lost Two-factor Authentication Details </h5>
+						<p>If you have lost your two factor authentication details your wallet is still fully recoverable. All we need is reasonable proof you are the account owner which can be provided by completing the form linked below.</p>
+						<button type="button" class="btn btn-primary right-pannel">Reset Two Factor Authentication</button>
+					</div>
+				</div>
+				
+					
+			</div> <!-- end container -->
+		</div><!-- end #main -->
+	</div> <!-- end page-wrap -->	
+	<footer class="footer">
+		<div class="container">
+			<ul>
+				<li><a href="#">О нас</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Контакты</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Политика конфеденциальности</a></li>
+				<li class="dot">.</li>
+				<li><a href="#">Подключенные узлы</a></li>
+			</ul>			
+		</div>
+
+	</footer>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script type="text/javascript" src="js/graph.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
